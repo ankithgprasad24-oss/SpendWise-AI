@@ -23,7 +23,7 @@ SpendWise AI is a premium personal finance and expense intelligence web applicat
 
 ### 1. 📊 Executive Dashboard
 - **Real-Time Financial Metrics**: Total expenses, monthly spending, remaining monthly budget, active savings overview.
-- **Visual Analytics**: Interactive Recharts expense category breakdown (pie/donut charts) and monthly spending trend lines.
+- **Visual Analytics**: Interactive Recharts expense category breakdown (donut/pie charts) and monthly spending trend lines.
 - **Recent Transactions Ledger**: Quick view of recent campus expenditures with original currency badges.
 - **AI Spotlight**: High-priority student financial tip surfaced directly on the main dashboard.
 
@@ -43,7 +43,7 @@ SpendWise AI is a premium personal finance and expense intelligence web applicat
   - `AUD` – Australian Dollar (A$)
   - `CAD` – Canadian Dollar (C$)
   - `SGD` – Singapore Dollar (S$)
-  - `AED` – UAE Dirham (د.إ)
+  - `AED` – UAE Dirham (AED / د.إ)
 - **Live Rate Synchronization**: Live exchange rates with cached memory fallbacks.
 - **Independent Currency Sample Calculations**: Settings cards compute samples in each card's target currency and locale.
 - **Persistent Preferences**: Active currency preference persists across page reloads via `localStorage`.
@@ -136,12 +136,22 @@ SpendWise-AI/
    cd backend
    ```
 
-2. Activate the virtual environment:
+2. Create the Python virtual environment:
+   - **Windows (PowerShell / CMD)**:
+     ```cmd
+     python -m venv venv
+     ```
+   - **macOS / Linux**:
+     ```bash
+     python3 -m venv venv
+     ```
+
+3. Activate the virtual environment:
    - **Windows (PowerShell)**:
      ```powershell
      .\venv\Scripts\Activate.ps1
      ```
-   - **Windows (cmd)**:
+   - **Windows (CMD)**:
      ```cmd
      venv\Scripts\activate.bat
      ```
@@ -150,23 +160,31 @@ SpendWise-AI/
      source venv/bin/activate
      ```
 
-3. (If creating a fresh virtual environment):
+4. Install dependencies:
    ```bash
-   python -m venv venv
    pip install -r requirements.txt
    ```
 
-4. Create environment file:
-   ```bash
-   cp .env.example .env
-   ```
+5. Configure environment variables:
+   - **Windows (PowerShell)**:
+     ```powershell
+     Copy-Item .env.example .env
+     ```
+   - **Windows (CMD)**:
+     ```cmd
+     copy .env.example .env
+     ```
+   - **macOS / Linux**:
+     ```bash
+     cp .env.example .env
+     ```
 
-5. Start the FastAPI backend server:
+6. Start the FastAPI backend server:
    ```bash
    python -m uvicorn app.main:app --reload --port 8000
    ```
 
-The backend automatically creates `spendwise.db` SQLite database, initializes tables with column migrations, and seeds synthetic student data.
+The backend will automatically create the `spendwise.db` SQLite database, initialize tables with column migrations, and seed synthetic student data.
 - **API Base**: `http://127.0.0.1:8000/api/v1`
 - **Interactive Swagger Docs**: `http://127.0.0.1:8000/docs`
 - **Health Check**: `http://127.0.0.1:8000/api/v1/health`
@@ -180,15 +198,24 @@ The backend automatically creates `spendwise.db` SQLite database, initializes ta
    cd frontend
    ```
 
-2. Install dependencies (if not already installed):
+2. Install dependencies:
    ```bash
    npm install
    ```
 
-3. Configure environment file:
-   ```bash
-   cp .env.example .env
-   ```
+3. Configure environment variables:
+   - **Windows (PowerShell)**:
+     ```powershell
+     Copy-Item .env.example .env
+     ```
+   - **Windows (CMD)**:
+     ```cmd
+     copy .env.example .env
+     ```
+   - **macOS / Linux**:
+     ```bash
+     cp .env.example .env
+     ```
 
 4. Start the development server:
    ```bash
@@ -221,16 +248,38 @@ npm run build
 
 ### Backend Automated Test Suite
 Runs tests across an isolated, temporary SQLite database:
-```bash
-cd backend
-.\venv\Scripts\python -m unittest discover -s tests -p "test_*.py"
-```
+- **Windows (PowerShell)**:
+  ```powershell
+  cd backend
+  .\venv\Scripts\python -m unittest discover -s tests -p "test_*.py"
+  ```
+- **Windows (CMD)**:
+  ```cmd
+  cd backend
+  venv\Scripts\python -m unittest discover -s tests -p "test_*.py"
+  ```
+- **macOS / Linux**:
+  ```bash
+  cd backend
+  python -m unittest discover -s tests -p "test_*.py"
+  ```
 
 To run the full end-to-end integration script:
-```bash
-cd backend
-.\venv\Scripts\python test_api.py
-```
+- **Windows (PowerShell)**:
+  ```powershell
+  cd backend
+  .\venv\Scripts\python test_api.py
+  ```
+- **Windows (CMD)**:
+  ```cmd
+  cd backend
+  venv\Scripts\python test_api.py
+  ```
+- **macOS / Linux**:
+  ```bash
+  cd backend
+  python test_api.py
+  ```
 
 ---
 
