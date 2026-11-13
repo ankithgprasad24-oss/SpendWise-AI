@@ -1,0 +1,144 @@
+{
+  "expenses": [
+    {
+      "title": "Campus Bookstore - Macroeconomics Textbook",
+      "amount": 78.50,
+      "category": "Books & Academics",
+      "date": "2026-11-02",
+      "payment_method": "Student Debit Card",
+      "notes": "Used 10% student coupon",
+      "is_recurring": false
+    },
+    {
+      "title": "Trader Joe's Weekly Groceries",
+      "amount": 64.20,
+      "category": "Dining & Groceries",
+      "date": "2026-11-03",
+      "payment_method": "UPI / Card",
+      "notes": "Weekly meal prep essentials",
+      "is_recurring": false
+    },
+    {
+      "title": "Campus Coffee Hub - Americano & Bagel",
+      "amount": 6.75,
+      "category": "Coffee & Snacks",
+      "date": "2026-11-04",
+      "payment_method": "Campus Card",
+      "notes": "Morning study session",
+      "is_recurring": false
+    },
+    {
+      "title": "Student Apartment Shared Utilities",
+      "amount": 45.00,
+      "category": "Housing & Utilities",
+      "date": "2026-11-05",
+      "payment_method": "Bank Transfer",
+      "notes": "Water, power and high-speed Wi-Fi",
+      "is_recurring": true
+    },
+    {
+      "title": "Metro Transit Monthly Student Pass",
+      "amount": 35.00,
+      "category": "Transit & Commute",
+      "date": "2026-11-06",
+      "payment_method": "Student Debit Card",
+      "notes": "Subsidized university transit rate",
+      "is_recurring": true
+    },
+    {
+      "title": "Spotify + Hulu Student Bundle",
+      "amount": 5.99,
+      "category": "Subscriptions & Tech",
+      "date": "2026-11-07",
+      "payment_method": "Credit Card",
+      "notes": "Student discount pricing",
+      "is_recurring": true
+    },
+    {
+      "title": "University Dining Hall Lunch",
+      "amount": 11.50,
+      "category": "Dining & Groceries",
+      "date": "2026-11-08",
+      "payment_method": "Campus Meal Plan",
+      "notes": "Buffet lunch with study group",
+      "is_recurring": false
+    },
+    {
+      "title": "GitHub Pro Student Developer Tier",
+      "amount": 4.00,
+      "category": "Subscriptions & Tech",
+      "date": "2026-11-08",
+      "payment_method": "Student Debit Card",
+      "notes": "Student developer tooling pack",
+      "is_recurring": true
+    },
+    {
+      "title": "Campus Cinema Friday Movie Night",
+      "amount": 8.00,
+      "category": "Entertainment & Social",
+      "date": "2026-11-09",
+      "payment_method": "Cash",
+      "notes": "Student ticket price",
+      "is_recurring": false
+    },
+    {
+      "title": "Campus Coffee Hub - Latte",
+      "amount": 5.25,
+      "category": "Coffee & Snacks",
+      "date": "2026-11-10",
+      "payment_method": "Campus Card",
+      "notes": "Mid-term prep",
+      "is_recurring": false
+    },
+    {
+      "title": "Chegg Study Monthly Subscription",
+      "amount": 15.95,
+      "category": "Books & Academics",
+      "date": "2026-11-10",
+      "payment_method": "Credit Card",
+      "notes": "Homework help",
+      "is_recurring": true
+    },
+    {
+      "title": "Target - Dorm Cleaning & Toiletries",
+      "amount": 28.40,
+      "category": "Housing & Utilities",
+      "date": "2026-11-11",
+      "payment_method": "UPI / Card",
+      "notes": "Laundry detergent, paper towels",
+      "is_recurring": false
+    },
+    {
+      "title": "Chipotle Bowl with Roommates",
+      "amount": 13.80,
+      "category": "Dining & Groceries",
+      "date": "2026-11-12",
+      "payment_method": "UPI / Card",
+      "notes": "Post-exam celebration",
+      "is_recurring": false
+    }
+  ],
+  "budgets": [
+    { "category": "Dining & Groceries", "monthly_limit": 250.0 },
+    { "category": "Housing & Utilities", "monthly_limit": 100.0 },
+    { "category": "Books & Academics", "monthly_limit": 150.0 },
+    { "category": "Coffee & Snacks", "monthly_limit": 45.0 },
+    { "category": "Transit & Commute", "monthly_limit": 50.0 },
+    { "category": "Subscriptions & Tech", "monthly_limit": 30.0 },
+    { "category": "Entertainment & Social", "monthly_limit": 60.0 }
+  ],
+  "savings_goals": [
+    {
+      "name": "Laptop Replacement Fund",
+      "target_amount": 750.0,
+      "current_amount": 320.0,
+      "target_date": "2027-01-15"
+    },
+    {
+      "name": "Emergency Cushion",
+      "target_amount": 300.0,
+      "current_amount": 185.0,
+      "target_date": "2026-12-31"
+    }
+  ]
+}
